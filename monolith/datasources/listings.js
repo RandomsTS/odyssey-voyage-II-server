@@ -9,7 +9,7 @@ class ListingsAPI extends RESTDataSource {
 
   getListings({ numOfBeds, page, limit, sortBy }) {
     return this.get(
-      `listings?numOfBeds=${numOfBeds}&page=${page}&limit=${limit}&sortBy=${sortBy}`,
+      `listings?numOfBeds=${numOfBeds}&page=${page}&limit=${limit}&sortBy=${sortBy}`
     );
   }
 
@@ -27,7 +27,7 @@ class ListingsAPI extends RESTDataSource {
 
   getTotalCost({ id, checkInDate, checkOutDate }) {
     return this.get(
-      `listings/${id}/totalCost?checkInDate=${checkInDate}&checkOutDate=${checkOutDate}`,
+      `listings/${id}/totalCost?checkInDate=${checkInDate}&checkOutDate=${checkOutDate}`
     );
   }
 
